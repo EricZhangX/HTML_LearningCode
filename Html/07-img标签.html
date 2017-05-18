@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07-img标签</title>
+</head>
+<body>
+
+<!--
+1.img:作用是告诉浏览器显示一张图片
+
+2.img标签的格式: <img src=""/>
+
+3.注意点
+    - 和 H系列的标签/p标签 还有Hr标签不同,img标签不会独占一行
+    - 如果我们手动指定了img标签的宽高,有可能导致图片变形,如果想指定img的宽高又不想图片变形,可以只指定宽度或高度,只要指定一个,系统会根据指定的值等比拉伸
+
+4.img的其它属性
+    width:宽度
+    height:高度
+    title:告诉浏览器,当鼠标悬停在图片上时,弹出的描述框中显示的内容
+    alt:英文alternate的缩写,告诉浏览器当找不到图片时显示的内容
+-->
+
+<img src="images/QRCode.jpg">
+<img src="images/QRCode.jpg" width="300" height="478">
+<img src="images/QRCode.jpg" width="100" height="478">
+<img src="images/QRCode.jpg" height="178">
+<img src="images/QRCode.jpg" width="100">
+<img src="images/QRCode.jpg" width="100" title="二维码">
+<img src="images/QRCodex.jpg" width="100" alt="图片不存在">
+
+</body>
+</html>

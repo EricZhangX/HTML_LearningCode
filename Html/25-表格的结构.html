@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>25-表格的结构</title>
+</head>
+<body>
+<!--
+1. 由于表格中存储的数据比较复杂,为了方便管理和阅读以及提升语义,我们可以对表格中存储的数据进行分类,表格中存储的数据可以分为4类
+-1> 表格的标题
+-2> 表格的表头信息
+-3> 表格的主体信息
+-4> 表格的页尾信息
+
+2.表格的完整结构:
+<table>
+    <caption>表格标题</caption>
+
+    <thead>
+    <tr>
+        <th>每一列的标题</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>数据</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>数据</td>
+    </tr>
+    </tfoot>
+</table>
+caption:指定表格的标题
+thead:指定表格的表头信息
+tbody:指定表格的主体信息
+tfoot:指定表格的页尾信息
+
+3.注意点:
+-1> 如果没有编写tbody,系统会自动添加tbody
+-2> 如果指定了thead和tfoot,那么在修改整个表格的高度时,thead和tfoot会保持默认的高度,不会碎表格的高度变化而变化
+-->
+
+<table border="1px" width="400" height="300">
+    <caption>学生信息</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>成绩</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>黄瓜</td>
+        <td>34</td>
+    </tr>
+    <tr>
+        <td>茄子</td>
+        <td>45</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>2</td>
+        <td>39.5</td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

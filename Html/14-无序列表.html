@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-无序列表</title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+        }
+        li {
+            float: left;
+            background-color: yellow;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--
+1.什么是列表标签?
+-作用:给一堆数据添加列表语义,也就是告诉搜索引擎,告诉浏览器这一堆数据是一个整体
+
+2.Html中列表标签的分类
+-1> 无序列表(最多)(unordered list)
+-2> 定义列表(其次)(definition list)
+-3> 有序列表(最少)(ordered list)
+
+3.无序列表的作用:给一堆数据添加列表语义,并且这一堆数据中的所有数据没有先后之分
+
+4.无序列表格式:
+<ul>
+    <li>Item</li>
+</ul>
+li 其实是list item 的缩写
+
+5.注意点:
+-1> 一定要记住ul标签是用来给一堆数据添加列表语义的,而不是用来给他们添加小圆点的
+-2> ul标签和li标签是一个整体,是一个组合. 所以一般情况下ul标签和li标签都是一起出现的,不会但对出现,也就是说不会单独使用一个ul标签或者单独使用一个li标签,都是组合在一起使用
+-3> 由于ul标签和li标签是一个组合,所以ul标签中不推荐包含其它标签,也就是所以后早ul标签中只会看到li标签
+-4> 在企业开发中,li标签内的内容可能会很复杂,所以我们可以继续在li标签内添加其它标签来丰富我们的界面
+-5> 无序列表中的li标签不仅可以添加其它标签来丰富界面,还可以添加ul标签,也就是说ul中含有li,li中又包含ul
+
+6.无序列表使用场景:
+-1> 新闻列表
+-2> 商品列表
+-3> 导航条
+
+7.在webStorm中如何快速创建ul
+- ul>li
+- 含义:生成一对ul标签,在这个ul标签内再生成一对li标签
+
+- ul>li*4
+- 含义:生成一对ul标签,在这个ul标签内再生成4对li标签
+-->
+
+<h2>中国城市列表</h2>
+<ul>
+    <li>北京</li>
+    <li>上海</li>
+    <li>广州</li>
+    <li>深圳</li>
+</ul>
+</body>
+</html>
